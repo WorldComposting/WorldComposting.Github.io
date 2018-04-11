@@ -6,8 +6,6 @@ categories: Mini VermiBag Update
 ---
 
 Testing to see how this works.  Will need to check about embedding video!!
-TEST
-TEST
-TEST
-TEST
-TEST
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/mFqHdEj3BFg" frameborder="0"> </iframe>
+Test
