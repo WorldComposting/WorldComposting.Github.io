@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "TEST YOtUBE"
+title:  "VIDEO POST"
 date:   2018-04-13 15:24:01 -0600
 categories: Mini VermiBag Update 3
 ---
-Youtube embeded video test
+Embeded video test
 
 {% youtube VbFhAQNmARc %}
 
