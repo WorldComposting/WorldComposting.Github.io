@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title:  "VIDEO POST"
@@ -6,5 +7,5 @@ categories: Mini VermiBag Update 3
 ---
 Embeded video test
 
-{% youtube VbFhAQNmARc %}
+<iframe width="420" height="315" src="http://www.youtube.com/embed/VbFhAQNmARc" frameborder="0" allowfullscreen></iframe>
 
