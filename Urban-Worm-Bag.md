@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Urban Worm Bag Videos
-permalink: /Urban Worm Bag/
+permalink: /Urban_Worm_Bag/
 ---
 
 The Urban Worm Bag is a bag made from fabric that works as a Continuous Flow Thru Worm Bin.
