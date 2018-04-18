@@ -11,4 +11,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Links to purchase Urban Worm Bag
 
-http://bit.ly/2nOTDl2
+<a href="http://bit.ly/2nOTDl2">Urban Worm Bag</a>
