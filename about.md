@@ -11,7 +11,7 @@ sitemap:
 
 <span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
 
-I started composting when I was around 10 years old.  That is when I first started mowing my parents yard and I realized that we were throwing out all of these clippings every week in the trash.  As we had the space we started a compost pile for these clippings.  We did start adding some food scraps and other things but during the winter we would stop.
+I started composting when I was around 10 years old.  I  started mowing my parents yard and realized that we were throwing out all of these clippings every week in the trash.  As we had extra space in the yard we started a compost pile for these clippings.  We did start adding some food scraps and other things but during the winter we would stop.
 
 ### Content is Imortant
 <div class="box">
