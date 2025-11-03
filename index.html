@@ -6,13 +6,12 @@ sitemap:
   priority: 1.0
   lastmod: 2025-11-02
   changefreq: weekly
----
-<!DOCTYPE html>
+---<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <meta name="keywords" content="vermicomposting, composting, worm bin, red wigglers, european nightcrawlers, african nightcrawlers, biochar, waste reduction, sustainability, urban composting"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <meta content="vermicomposting, composting, worm bin, red wigglers, european nightcrawlers, african nightcrawlers, biochar, waste reduction, sustainability, urban composting" name="keywords" />
   <title>World Composting | Vermicomposting, Worm Bins, Sustainable Composting</title>
   {% include head.html %}
   <style>
@@ -37,6 +36,13 @@ sitemap:
     .about{background:#fff;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.07);padding:2rem}
     .feature{display:grid;grid-template-columns:1.2fr .8fr;gap:1.25rem}
     .feature iframe{width:100%;height:315px;border:0;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+    .featured-videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:1.5rem}
+    .video-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.12);transition:transform 0.3s ease}
+    .video-card:hover{transform:translateY(-5px)}
+    .video-card iframe{width:100%;height:200px;border:none}
+    .video-card .video-info{padding:1rem}
+    .video-card h3{margin:0 0 0.5rem 0;color:var(--green);font-size:1rem}
+    .video-card p{margin:0;color:#666;font-size:0.9rem;line-height:1.4}
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
     .card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08)}
     .card img{width:100%;display:block}
@@ -54,14 +60,14 @@ sitemap:
 <body>
   <!-- HERO -->
   <header class="hero" role="banner">
-    <img class="logo" src="/images/channel-logo.jpg" alt="World Composting logo"/>
+    <img alt="World Composting logo" class="logo" src="/images/channel-logo.jpg" />
     <h1>World Composting</h1>
     <p>Vermicomposting how‑tos, DIY worm bins, biochar, and zero‑waste composting for sustainable living.</p>
-    <a class="btn" href="#featured">Watch: Creating a Simple Vermicomposting Worm Bin</a>
+    <a class="btn" href="#featured">Watch: Featured Videos</a>
   </header>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
+  <section class="section" id="about">
     <p class="kicker">About</p>
     <div class="about">
       <h2>About World Composting</h2>
@@ -69,93 +75,103 @@ sitemap:
     </div>
   </section>
 
-  <!-- FEATURED VIDEO -->
-  <section id="featured" class="section">
-    <p class="kicker">Featured Composting Video</p>
-    <div class="feature">
-      <div>
-        <h2>Creating a Simple Vermicomposting Worm Bin</h2>
-        <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" title="Creating a Simple Vermicomposting Worm Bin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>Learn the basics of setting up a DIY worm bin for vermicompost and sustainable waste reduction.</p>
+  <!-- FEATURED VIDEOS -->
+  <section class="section" id="featured">
+    <p class="kicker">Top 3 Featured Videos</p>
+    <h2>Popular Composting Guides</h2>
+    <div class="featured-videos">
+      <div class="video-card">
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube.com/embed/VWJMROuf2TI" title="Control Fungus Gnats with BTI Mosquito Dunks"></iframe>
+        <div class="video-info">
+          <h3>Control Fungus Gnats with BTI Mosquito Dunks</h3>
+          <p>Learn how to control fungus gnats with BTI dunks, a natural and effective way to eliminate these annoying pests. Perfect for indoor plant lovers and worm bin operators.</p>
+        </div>
       </div>
-      <div>
-        <h3>Why vermicomposting?</h3>
-        <p>Worm bins transform food scraps into nutrient‑rich compost, cutting landfill waste and building healthy soil for urban gardening.</p>
-        <ul>
-          <li>Reduce waste and methane</li>
-          <li>Create free, organic fertilizer</li>
-          <li>Great for apartments and small spaces</li>
-        </ul>
+
+      <div class="video-card">
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube.com/embed/db_KtFZJITM" title="Worm Sorter/Harvester Upgrade - Concrete Vibration Motor"></iframe>
+        <div class="video-info">
+          <h3>Worm Sorter/Harvester Upgrade</h3>
+          <p>Testing out a vibration motor for harvesting worm castings. An upgrade from the reciprocating saw method that's easier to control and more effective.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube.com/embed/HJLxpc3UFFg" title="Bokashi Bucket Single Bucket Method"></iframe>
+        <div class="video-info">
+          <h3>Bokashi Bucket: Single Bucket Method</h3>
+          <p>Try the bokashi single bucket method with an indoor soil factory. Process kitchen scraps and other food waste efficiently with this proven system.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- RECENT UPLOADS (static links; can be automated later) -->
-  <section id="recent" class="section">
+  <section class="section" id="recent">
     <p class="kicker">Recent uploads</p>
     <h2>Latest Composting Videos</h2>
     <div class="grid">
-      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_1" target="_blank" rel="noopener">
-        <img src="/images/thumb-video-1.jpg" alt="Worm Bin Update: African & European Nightcrawlers + Red Wigglers"/>
-        <div class="pad"><strong>Worm Bin Update: African & European Nightcrawlers + Red Wigglers</strong></div>
+      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_1" rel="noopener" target="_blank">
+        <img alt="Worm Bin Update: African & European Nightcrawlers + Red Wigglers" />
+        <div class="pad">Worm Bin Update: African & European Nightcrawlers + Red Wigglers</div>
       </a>
-      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_2" target="_blank" rel="noopener">
-        <img src="/images/thumb-video-2.jpg" alt="DIY Trash Can Worm Bin - Failed Harvest"/>
-        <div class="pad"><strong>DIY Trash Can Worm Bin - Failed Harvest</strong></div>
+      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_2" rel="noopener" target="_blank">
+        <img alt="DIY Trash Can Worm Bin - Failed Harvest" />
+        <div class="pad">DIY Trash Can Worm Bin - Failed Harvest</div>
       </a>
-      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_3" target="_blank" rel="noopener">
-        <img src="/images/thumb-video-3.jpg" alt="FoodCycler by Vitamix Eco 5 Unboxing and Initial Review"/>
-        <div class="pad"><strong>FoodCycler by Vitamix Eco 5 Unboxing and Initial Review</strong></div>
+      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_3" rel="noopener" target="_blank">
+        <img alt="FoodCycler by Vitamix Eco 5 Unboxing and Initial Review" />
+        <div class="pad">FoodCycler by Vitamix Eco 5 Unboxing and Initial Review</div>
       </a>
-      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_4" target="_blank" rel="noopener">
-        <img src="/images/thumb-video-4.jpg" alt="Urban Worm Bag V2 with ENCs - Tiny European Nightcrawlers"/>
-        <div class="pad"><strong>Urban Worm Bag V2 with ENCs - Tiny European Nightcrawlers</strong></div>
+      <a class="card" href="https://www.youtube.com/watch?v=VIDEO_4" rel="noopener" target="_blank">
+        <img alt="Urban Worm Bag V2 with ENCs - Tiny European Nightcrawlers" />
+        <div class="pad">Urban Worm Bag V2 with ENCs - Tiny European Nightcrawlers</div>
       </a>
     </div>
   </section>
 
   <!-- PLAYLISTS / SERIES -->
-  <section id="playlists" class="section">
+  <section class="section" id="playlists">
     <p class="kicker">Playlists</p>
     <h2>Composting Playlists & Series</h2>
     <div class="grid">
-      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_BNLINK" target="_blank" rel="noopener">
-        <img src="/images/playlist-bnlink.jpg" alt="BN-LINK Grow Bag Worm System playlist"/>
-        <div class="pad"><strong>BN-LINK Grow Bag Worm System</strong></div>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_BNLINK" rel="noopener" target="_blank">
+        <img alt="BN-LINK Grow Bag Worm System playlist" />
+        <div class="pad">BN-LINK Grow Bag Worm System</div>
       </a>
-      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_VITAMIX" target="_blank" rel="noopener">
-        <img src="/images/playlist-foodcycler.jpg" alt="Vitamix FoodCycler Eco 5 playlist"/>
-        <div class="pad"><strong>Vitamix FoodCycler Eco 5</strong></div>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_VITAMIX" rel="noopener" target="_blank">
+        <img alt="Vitamix FoodCycler Eco 5 playlist" />
+        <div class="pad">Vitamix FoodCycler Eco 5</div>
       </a>
-      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_TRASHCAN" target="_blank" rel="noopener">
-        <img src="/images/playlist-trashcan.jpg" alt="DIY Trash Can Worm Bin playlist"/>
-        <div class="pad"><strong>DIY Trash Can Worm Bin</strong></div>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_TRASHCAN" rel="noopener" target="_blank">
+        <img alt="DIY Trash Can Worm Bin playlist" />
+        <div class="pad">DIY Trash Can Worm Bin</div>
       </a>
-      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_ENC" target="_blank" rel="noopener">
-        <img src="/images/playlist-enc.jpg" alt="European Nightcrawlers series"/>
-        <div class="pad"><strong>European Nightcrawlers</strong></div>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLAYLIST_ENC" rel="noopener" target="_blank">
+        <img alt="European Nightcrawlers series" />
+        <div class="pad">European Nightcrawlers</div>
       </a>
     </div>
   </section>
 
   <!-- SOCIAL -->
-  <section id="social" class="section">
+  <section class="section" id="social">
     <p class="kicker">Connect</p>
     <div class="social">
-      <a class="badge" href="https://instagram.com/worldcomposting" target="_blank" rel="noopener" aria-label="Follow on Instagram">
-        <img src="/assets/instagram.svg" alt="Instagram" width="18" height="18"/> Instagram
+      <a aria-label="Follow on Instagram" class="badge" href="https://instagram.com/worldcomposting" rel="noopener" target="_blank">
+        <img alt="Instagram" height="18" width="18" /> Instagram
       </a>
-      <a class="badge" href="https://facebook.com/worldcomposting" target="_blank" rel="noopener" aria-label="Follow on Facebook">
-        <img src="/assets/facebook.svg" alt="Facebook" width="18" height="18"/> Facebook
+      <a aria-label="Follow on Facebook" class="badge" href="https://facebook.com/worldcomposting" rel="noopener" target="_blank">
+        <img alt="Facebook" height="18" width="18" /> Facebook
       </a>
-      <a class="badge" href="https://www.youtube.com/@WorldComposting" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">
-        <img src="/assets/youtube.svg" alt="YouTube" width="18" height="18"/> YouTube
+      <a aria-label="Subscribe on YouTube" class="badge" href="https://www.youtube.com/@WorldComposting" rel="noopener" target="_blank">
+        <img alt="YouTube" height="18" width="18" /> YouTube
       </a>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+  <section class="section" id="contact">
     <p class="kicker">Contact</p>
     <div class="contact" role="form">
       <h2>Contact World Composting</h2>
@@ -163,21 +179,21 @@ sitemap:
       <form action="https://formspree.io/f/FORM_ID" method="POST">
         <label>
           Name
-          <input type="text" name="name" placeholder="Your name" required>
+          <input name="name" placeholder="Your name" required="" type="text" />
         </label>
         <label>
           Email
-          <input type="email" name="email" placeholder="you@example.com" required>
+          <input name="email" placeholder="you@example.com" required="" type="email" />
         </label>
         <label>
           Message
-          <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+          <textarea name="message" placeholder="How can we help?" required="" rows="5"></textarea>
         </label>
-        <input type="hidden" name="_subject" value="New message from World Composting website"/>
-        <input type="hidden" name="form-name" value="contact"/>
+        <input name="_subject" type="hidden" value="New message from World Composting website" />
+        <input name="form-name" type="hidden" value="contact" />
         <button type="submit">Send Message</button>
       </form>
-      <small>We never display any contact addresses publicly.</small>
+      <p><em>We never display any contact addresses publicly.</em></p>
     </div>
   </section>
 
